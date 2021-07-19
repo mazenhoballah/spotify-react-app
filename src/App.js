@@ -12,7 +12,7 @@ function App() {
         <div className='App'>
             <Switch>
                 <Route exact path='/spotify-react-app' component={Login} />
-                <Route exact path='https://mazenhoballah.github.io/spotify-react-app/redirect' component={RedirectPage} />
+                <Route exact path='/redirect' component={RedirectPage} />
                 <Route exact path='/spotify-react-app/search' component={SearchPage} />
                 <Route exact path={'/spotify-react-app/:artistId/albums'} component={AlbumsPage} />
                 <Route component={NotFoundPage} />
