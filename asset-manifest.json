@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/spotify-react-app/static/css/main.9f0c6fb7.chunk.css",
+    "main.js": "/spotify-react-app/static/js/main.31e149e2.chunk.js",
+    "main.js.map": "/spotify-react-app/static/js/main.31e149e2.chunk.js.map",
+    "runtime-main.js": "/spotify-react-app/static/js/runtime-main.e11f0f88.js",
+    "runtime-main.js.map": "/spotify-react-app/static/js/runtime-main.e11f0f88.js.map",
+    "static/js/2.8c0d790c.chunk.js": "/spotify-react-app/static/js/2.8c0d790c.chunk.js",
+    "static/js/2.8c0d790c.chunk.js.map": "/spotify-react-app/static/js/2.8c0d790c.chunk.js.map",
+    "index.html": "/spotify-react-app/index.html",
+    "static/css/main.9f0c6fb7.chunk.css.map": "/spotify-react-app/static/css/main.9f0c6fb7.chunk.css.map",
+    "static/js/2.8c0d790c.chunk.js.LICENSE.txt": "/spotify-react-app/static/js/2.8c0d790c.chunk.js.LICENSE.txt",
+    "static/media/spotify.8eecc546.svg": "/spotify-react-app/static/media/spotify.8eecc546.svg",
+    "static/media/spotifyBlack.2afdad89.svg": "/spotify-react-app/static/media/spotifyBlack.2afdad89.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e11f0f88.js",
+    "static/js/2.8c0d790c.chunk.js",
+    "static/css/main.9f0c6fb7.chunk.css",
+    "static/js/main.31e149e2.chunk.js"
+  ]
+}
