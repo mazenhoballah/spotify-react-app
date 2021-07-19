@@ -5,7 +5,7 @@ const NotFoundPage = () => {
     return (
         <React.Fragment>
             <Header />
-            Page not found. Goto <Link to='/'>Home Page</Link>
+            Page not found. Goto <Link to='/spotify-react-app'>Home Page</Link>
         </React.Fragment>
     );
 };

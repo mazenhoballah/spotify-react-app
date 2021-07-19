@@ -101,7 +101,7 @@ const SearchPage = (props) => {
                         <div key={i}>
                             <Link
                                 to={{
-                                    pathname: `/${artist.id}/albums`,
+                                    pathname: `/spotify-react-app/${artist.id}/albums`,
                                     artistName: artist.name,
                                 }}
                                 className='link'
