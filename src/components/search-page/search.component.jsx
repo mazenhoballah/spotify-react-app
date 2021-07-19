@@ -40,12 +40,11 @@ const SearchPage = (props) => {
     const searchForItems = async () => {
         setItems({});
         try {
-            const term = encodeURIComponent(searchTerm);
-            const API_URL = `https://api.spotify.com/v1/search?q=${term.toLocaleUpperCase()}&type=artist`;
-            const result = await get(API_URL);
-            setItems(result);
-            console.log('results => ', result);
-            console.log(result.artists.items[0].popularity);
+                const term = encodeURIComponent(searchTerm);
+                const API_URL = `https://api.spotify.com/v1/search?q=${term.toLocaleUpperCase()}&type=artist`;
+                const result = await get(API_URL);
+                setItems(result);
+            
         } catch (error) {}
     };
 
@@ -56,15 +55,15 @@ const SearchPage = (props) => {
         );
     }, []);
 
-    useEffect(() => {
-        console.log('items=>', items);
-    }, [items]);
+    // useEffect(() => {
+    //     console.log('items=>', items);
+    // }, [items]);
 
     useEffect(() => {
         if (searchTerm.trim() !== '') {
             setErrorMsg('');
             searchForItems();
-            console.log(searchTerm);
+            // console.log(searchTerm);
         } else {
             setErrorMsg('Please enter a search term.');
         }
@@ -93,10 +92,10 @@ const SearchPage = (props) => {
                     display: 'flex',
                     alignItems: 'center',
                     flexWrap: 'wrap',
-                    margin:'0 auto'
+                    margin: '0 auto',
                 }}
             >
-                {items.artists ? (
+                {items.artists  ? (
                     items.artists.items.map((artist, i) => (
                         <div key={i}>
                             <Link
