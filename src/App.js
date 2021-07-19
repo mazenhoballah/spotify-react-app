@@ -15,7 +15,7 @@ function App() {
                 <Route path='/redirect' component={RedirectPage} />
                 <Route path='/search' component={SearchPage} />
                 <Route path={'/:artistId/albums'} component={AlbumsPage} />
-                {/* <Route component={NotFoundPage} /> */}
+                <Route component={NotFoundPage} />
             </Switch>
         </div>
     );
