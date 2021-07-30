@@ -8,6 +8,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Rating from '@material-ui/lab/Rating';
@@ -40,11 +41,10 @@ const SearchPage = (props) => {
     const searchForItems = async () => {
         setItems({});
         try {
-                const term = encodeURIComponent(searchTerm);
-                const API_URL = `https://api.spotify.com/v1/search?q=${term.toLocaleUpperCase()}&type=artist`;
-                const result = await get(API_URL);
-                setItems(result);
-            
+            const term = encodeURIComponent(searchTerm);
+            const API_URL = `https://api.spotify.com/v1/search?q=${term.toLocaleUpperCase()}&type=artist`;
+            const result = await get(API_URL);
+            setItems(result);
         } catch (error) {}
     };
 
@@ -70,12 +70,23 @@ const SearchPage = (props) => {
         return () => {
             setSearchTerm(''); //clean the state in the unmount of the component
         };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [searchTerm]);
 
     return (
         <Container maxWidth='lg'>
             <div className='search-container'>
+                <div className='btn-cont'>
+                    <Link to='/'>
+                        <Button
+                            variant='contained'
+                            color='default'
+                            className='logout-btn'
+                        >
+                            Logout
+                        </Button>
+                    </Link>
+                </div>
                 <div>
                     <TextField
                         id='outlined-search'
@@ -96,7 +107,7 @@ const SearchPage = (props) => {
                     margin: '0 auto',
                 }}
             >
-                {items.artists  ? (
+                {items.artists ? (
                     items.artists.items.map((artist, i) => (
                         <div key={i}>
                             <Link
