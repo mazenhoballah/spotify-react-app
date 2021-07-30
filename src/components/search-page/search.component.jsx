@@ -70,6 +70,7 @@ const SearchPage = (props) => {
         return () => {
             setSearchTerm(''); //clean the state in the unmount of the component
         };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [searchTerm]);
 
     return (
@@ -100,7 +101,7 @@ const SearchPage = (props) => {
                         <div key={i}>
                             <Link
                                 to={{
-                                    pathname: `/spotify-react-app/${artist.id}/albums`,
+                                    pathname: `/${artist.id}/albums`,
                                     artistName: artist.name,
                                 }}
                                 className='link'

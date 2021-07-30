@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useParams, useLocation } from 'react-router';
+import { useParams } from 'react-router';
 import { get } from '../../utils/api';
 import './albums-page.styles.scss';
 import Card from '@material-ui/core/Card';
@@ -45,6 +44,7 @@ const AlbumsPage = () => {
     };
     useEffect(() => {
         searchForAlbums();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
