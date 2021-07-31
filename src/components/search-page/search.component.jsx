@@ -55,9 +55,9 @@ const SearchPage = (props) => {
         );
     }, []);
 
-    // useEffect(() => {
-    //     console.log('items=>', items);
-    // }, [items]);
+    useEffect(() => {
+        console.log('items=>', items);
+    }, [items]);
 
     useEffect(() => {
         if (searchTerm.trim() !== '') {
@@ -122,7 +122,7 @@ const SearchPage = (props) => {
                                         {artist.images[0] ? (
                                             <CardMedia
                                                 className={classes.media}
-                                                image={artist.images[2].url}
+                                                image={artist.images[0].url}
                                                 title={artist.name}
                                             />
                                         ) : (
