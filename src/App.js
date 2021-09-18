@@ -12,9 +12,9 @@ function App() {
         <div className='App'>
             <Switch>
                 <Route exact path='/' component={Login} />
-                <Route exact path='https://mazenhoballah.github.io/spotify-react-app/redirect' component={RedirectPage} />
-                <Route exact path='https://mazenhoballah.github.io/spotify-react-app/search' component={SearchPage} />
-                <Route exact path={'https://mazenhoballah.github.io/spotify-react-app/:artistId/albums'} component={AlbumsPage} />
+                <Route exact path='/redirect' component={RedirectPage} />
+                <Route exact path='/search' component={SearchPage} />
+                <Route exact path='/:artistId/albums' component={AlbumsPage} />
                 <Route component={NotFoundPage} />
             </Switch>
         </div>
