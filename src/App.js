@@ -11,10 +11,10 @@ function App() {
     return (
         <div className='App'>
             <Switch>
-                <Route exact path='/' component={Login} />
-                <Route exact path='/redirect' component={RedirectPage} />
-                <Route exact path='/search' component={SearchPage} />
-                <Route exact path='/:artistId/albums' component={AlbumsPage} />
+                <Route exact path='/spotify-react-app' component={Login} />
+                <Route exact path='/spotify-react-app/redirect' component={RedirectPage} />
+                <Route exact path='/spotify-react-app/search' component={SearchPage} />
+                <Route exact path='/spotify-react-app/:artistId/albums' component={AlbumsPage} />
                 <Route component={NotFoundPage} />
             </Switch>
         </div>
