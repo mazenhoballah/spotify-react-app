@@ -12,7 +12,7 @@ export default class RedirectPage extends React.Component {
       const expiryTime = new Date().getTime() + access_token.expires_in * 1000;
       localStorage.setItem('params', JSON.stringify(access_token));
       localStorage.setItem('expiry_time', expiryTime);
-      history.push('/search');
+      history.push('https://mazenhoballah.github.io/spotify-react-app/search');
     } catch (error) {
       history.push('/');
     }
