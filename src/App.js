@@ -12,9 +12,9 @@ function App() {
         <div className='App'>
          <HashRouter>
             <Switch>
-                <Route exact path='/spotify-react-app/' component={Login} />
-                <Route exact path='/spotify-react-app/redirect' component={RedirectPage} />
-                <Route exact path='/spotify-react-app/search' component={SearchPage} />
+                <Route exact path='/' component={Login} />
+                <Route exact path='/redirect' component={RedirectPage} />
+                <Route exact path='/search' component={SearchPage} />
                 <Route exact path='/spotify-react-app/:artistId/albums' component={AlbumsPage} />
                 <Route component={NotFoundPage} />
             </Switch>
