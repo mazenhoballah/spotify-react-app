@@ -10,7 +10,7 @@ import './App.css';
 function App() {
     return (
         <div className='App'>
-         // <HashRouter>
+         <HashRouter>
             <Switch>
                 <Route exact path='/spotify-react-app/' component={Login} />
                 <Route exact path='/spotify-react-app/redirect' component={RedirectPage} />
@@ -18,7 +18,7 @@ function App() {
                 <Route exact path='/spotify-react-app/:artistId/albums' component={AlbumsPage} />
                 <Route component={NotFoundPage} />
             </Switch>
-        //  </HashRouter>
+         </HashRouter>
         </div>
     );
 }
